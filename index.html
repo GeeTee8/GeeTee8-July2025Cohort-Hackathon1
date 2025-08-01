@@ -119,7 +119,191 @@
             padding-bottom: 0.5rem;
         }
 
+        /* Programming languages list styling */
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
 
+        /* Individual language tags styling */
+        .language-tag {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        /* Download CV button styling */
+        .cv-download {
+            display: inline-block;
+            background: linear-gradient(135deg, #27ae60, #16a085);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 1rem 0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for CV download button */
+        .cv-download:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* Projects grid layout */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Individual project card styling */
+        .project-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for project cards */
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Project titles styling */
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        /* Project links styling */
+        .project-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        /* Hover effect for project links */
+        .project-link:hover {
+            background: #2980b9;
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Form input fields styling */
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+         /* Focus effect for form fields */
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+         /* Submit button styling */
+        .submit-button {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for submit button */
+        .submit-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Success message styling */
+        .success-message {
+            background: linear-gradient(135deg, #27ae60, #16a085);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Show success message when form is submitted */
+        .contact-form:target + .success-message {
+            display: block;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 2rem;
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Smooth scrolling for navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation for page load */
+        .section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Keyframes for fade in animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -150,11 +334,11 @@
             <!-- Programming languages I know -->
             <h3 style="margin-top: 2rem; color: #2c3e50;">Programming Languages:</h3>
             <div class="languages">
-                <span>HTML5</span>
-                <span>CSS</span>
-                <span>Python</span>
-                <span>Git</span>
-                <span>C++</span>
+                <span class="language-tag">HTML5</span>
+                <span class="language-tag">CSS</span>
+                <span class="language-tag">Python</span>
+                <span class="language-tag">Git</span>
+                <span class="language-tag">C++</span>
             </div>
         </section>
 
@@ -168,7 +352,7 @@
                 <p><strong>Relevant Coursework:</strong>Electrical Circuit Analysis, Renewable Energy Technologies, Electrical Installation and Wiring, Engineering Design and Simulation (using Multisim, MATLAB, Proteus), Solar System Design and Installation, Project Management Fundamentals, Introduction to Programming / Embedded Systems (Arduino-based project)</p>
                 
                 <!-- Download CV button - using a link to actual CV file -->
-                <a href="ibhaze-godstime-cv.pdf" download="Ibhaze Godstime-CV.pdf">📄 Download My CV</a>
+                <a href="ibhaze-godstime-cv.pdf" download="Ibhaze Godstime-CV.pdf" class="cv-download">📄 Download My CV</a>
             </div>
         </section>
 
@@ -198,41 +382,41 @@
          <!-- Projects section -->
         <section id="projects" class="section">
             <h2>🛠️ Projects</h2>
-            <div>
+            <div  class="projects-grid">
                 <!-- Project 1 -->
-                 <div>
+                 <div class="project-card">
                     <h3>Portfolio Website</h3>
                     <p>This project is a simple yet fully functional personal portfolio website built using only HTML5—no CSS or JavaScript. It was created as part of an introductory web development assignment to demonstrate mastery of semantic HTML5 tags and proper document structure. The site features clearly defined sections such as Home, About Me, Projects, and Contact, showcasing clean markup and accessibility-conscious design. It serves as a foundation for future styling and interactivity, while emphasizing the importance of writing well-organized, standards-compliant HTML code.</p>
                     <p><strong>Technologies:</strong> HTML5</p>
-                    <a href="https://ibhaze-godstime-html5-portfolio.netlify.app/" target="_blank">View Project</a>
-                    <a href="https://github.com/PLP-WebTechnologies/july-2025-introduction-to-html-5-GeeTee8" target="_blank">GitHub Repo</a>
+                    <a href="https://ibhaze-godstime-html5-portfolio.netlify.app/" target="_blank"  class="project-link">View Project</a>
+                    <a href="https://github.com/PLP-WebTechnologies/july-2025-introduction-to-html-5-GeeTee8" target="_blank"  class="project-link">GitHub Repo</a>
                 </div>
                 
 
                 <!-- Project 2 -->
-                <div>
+                <div class="project-card">
                     <h3>Why Businesses Need a Digital Marketing Agency for Brand Transformation</h3>
                     <p>This SEO-optimized article was written to highlight the strategic importance of hiring a digital marketing agency like Avvistra for brand transformation. The piece combines persuasive copywriting with targeted keywords such as digital agency, brand transformation, and Avvistra Digital Marketing Agency to enhance search visibility and user engagement. It educates businesses on key benefits—including cost-effectiveness, improved SEO, and access to data-driven strategies—while maintaining a clear, professional tone suited for high-conversion marketing blogs or service landing pages. The article is structured for readability, search engine relevance, and thought leadership positioning.</p>
                     <p><strong>Skill:</strong> SEO Content Writing</p>
-                    <a href="https://docs.google.com/document/d/1Ui9w7gzToXw8pDWanN8rkX60z8AUO-hu7ZDZQOq2Vfs/edit?tab=t.0" target="_blank">View Project</a>
+                    <a href="https://docs.google.com/document/d/1Ui9w7gzToXw8pDWanN8rkX60z8AUO-hu7ZDZQOq2Vfs/edit?tab=t.0" target="_blank"  class="project-link">View Project</a>
                 </div>
 
                 <!-- Project 3 -->
-                 <div>
+                 <div class="project-card">
                     <h3>Marketing Strategy for Shalom O Fashion Arena</h3>
                     <p>Shalom O Fashion Arena aims to boost brand awareness and sales by 40% in 3 months with bespoke outfits that make clients stand out. The strategy includes Instagram, Facebook, WhatsApp, and TikTok for product showcases, styling tips, and client testimonials. Paid ads will target major Nigerian cities. Engagement involves quick DM responses, giveaways, and referrals. Conversion focuses on strong CTAs and urgent offers. Plans include launching an online store and influencer collaborations for growth.</p>
                     <p><strong>Skill:</strong> SEO Content Writing</p>
-                    <a href="https://docs.google.com/document/d/1qV_e39EjA03O1wdIIZM5eVplwu54qMpk1aOQF2uogCo/edit?usp=sharing" target="_blank">View Project</a>
+                    <a href="https://docs.google.com/document/d/1qV_e39EjA03O1wdIIZM5eVplwu54qMpk1aOQF2uogCo/edit?usp=sharing" target="_blank"  class="project-link">View Project</a>
                 </div>
             
                 <!-- Project 4 -->
-                <div>
+                <div class="project-card">
                     <h3>Automated Lighting Control with Arduino & Sensors</h3>
                     <p>Engineered a smart lighting control system using Arduino Uno, C++ programming, PIR sensors, LDR, and relay modules to automate corridor lighting at FUTA. The embedded system uses sensor-based logic to detect motion and ambient light levels, activating seven 12W LED lamps only when needed. Simulated with Wokwi and tested on-site, it achieved 83.33% energy savings. The IoT-based solution improves energy efficiency and security, with ₦760,233.60 projected annual savings and a 1.14-year return on investment.</p>
                     <p><strong>Skill:</strong> IoT & Automation</p>
                     <p><strong>Technologies:</strong> C++, Wokwi Simulator, Proteus Circuit Design</p>
-                    <a href="https://docs.google.com/document/d/1q3_f26gdLJ-UsbFt0h7XZJ3-nBmhKn2bU5LVXPlhLzw/edit?usp=drivesdk" target="_blank">View Project</a>
-                    <a href="https://wokwi.com/projects/417247283921692673" target="_blank">Wokwi Simulator</a>
+                    <a href="automated-lighting-control-with-arduino-&-sensors.pdf" download="DESIGN AND IMPLEMENTATION OF A MOTION-SENSOR LIGHTING SYSTEM.pdf" class="project-link">View Project</a>
+                    <a href="https://wokwi.com/projects/417247283921692673" target="_blank"  class="project-link">Wokwi Simulator</a>
                 </div>
             </div>
         </section>
@@ -243,16 +427,16 @@
             <p style="text-align: center; margin-bottom: 2rem;">I am open to professional opportunities, collaborations, and meaningful projects. If you would like to work together or discuss how I can contribute to your team or initiative, feel free to reach out.</p>
             
             <!-- Contact form using HTML5 form validation -->
-            <form action="https://formspree.io/f/meozzygo" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/meozzygo" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <input type="text" name="subject" placeholder="Subject" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message 🚀</button>
+                <button type="submit" class="submit-button">Send Message 🚀</button>
             </form>
             
             <!-- Success message (shown after form submission) -->
-            <div>
+            <div class="success-message">
                 <p>Thank you for your message. I will review it and get back to you shortly.</p>
             </div>
             
