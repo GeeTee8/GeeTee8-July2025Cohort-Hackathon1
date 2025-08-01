@@ -9,17 +9,128 @@
     <title>Ibhaze Godstime - Portfolio Website</title>
     
     <!-- CSS to style the website -->
-    <style></style>
+    <style>
+        /* Reset default browser styles and set up basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main body styling - sets the overall look of the page */
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+         /* Container to center content and add padding */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header section styling */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Profile picture styling */
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+         /* Hover effect for profile picture */
+        .profile-picture:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Main heading styling */
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+         /* Subtitle under main heading */
+        .headline {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Navigation menu styling */
+        nav {
+            margin-top: 2rem;
+        }
+
+        /* Navigation links styling */
+        nav a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        /* Hover effect for navigation links */
+        nav a:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Main content sections styling */
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+         /* Section headings styling */
+        .section h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+
+    </style>
 </head>
 <body>
     <!-- Main container that wraps all visible section of the webpage -->
-    <div>
+    <div class="container">
         <!-- Header section with name and navigation -->
         <header id="home">
             <!-- Profile picture - replace 'your-photo.jpg' with your actual image file -->
-            <img src="ibhaze-godstime-photo.jpg" alt="Ibhaze Godstime - Profile Picture" width="150px" height="150px">
+            <img src="ibhaze-godstime-photo.jpg" alt="Ibhaze Godstime - Profile Picture" class="profile-picture">
             <h1>Ibhaze Godstime</h1>
-            <p>Certified Digital Marketer, SEO Content Writer & Tech Enthusiast</p>
+            <p class="headline">Certified Digital Marketer, SEO Content Writer & Tech Enthusiast</p>
             <!-- Navigation menu to jump to different sections -->
             <nav>
                 <a href="#about">About Me</a>
@@ -31,7 +142,7 @@
         </header>
 
          <!-- About Me section -->
-        <section id="about">
+        <section id="about" class="section">
             <h2>👋 About Me</h2>
             <p>
                 I am Ibhaze Godstime, a passionate and evolving Software Developer with a background in Electrical and Electronics Engineering, and practical experience in project management, digital strategy, and technology. Certified in Digital Marketing, I possess hands-on skills in SEO content writing, social media management, and online engagement. I’ve contributed to energy-saving projects and continue to grow in web development, clean coding, and collaborative tech work. With a problem-solving mindset and a drive for innovation, I’m committed to building purposeful digital solutions that combine strategy, structure, and software.
@@ -48,7 +159,7 @@
         </section>
 
         <!-- Educational Background section -->
-        <section id="education">
+        <section id="education" class="section">
             <h2>🎓 Educational Background</h2>
             <div>
                 <h3 style="color: #2c3e50;">Bachelor of Engineering in Electrical & Electronics Engineering</h3>
@@ -62,7 +173,7 @@
         </section>
 
         <!-- Interests section -->
-        <section id="interests">
+        <section id="interests" class="section">
             <h2>💡 Interests</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
                 <div>
@@ -85,7 +196,7 @@
         </section>
 
          <!-- Projects section -->
-        <section id="projects">
+        <section id="projects" class="section">
             <h2>🛠️ Projects</h2>
             <div>
                 <!-- Project 1 -->
@@ -127,7 +238,7 @@
         </section>
 
         <!-- Contact section -->
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>📧 Contact Me</h2>
             <p style="text-align: center; margin-bottom: 2rem;">I am open to professional opportunities, collaborations, and meaningful projects. If you would like to work together or discuss how I can contribute to your team or initiative, feel free to reach out.</p>
             
