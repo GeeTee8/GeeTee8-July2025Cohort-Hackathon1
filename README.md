@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This responsive and visually appealing
 
 ## 🧠 About This Project
 
-This project is a custom-built **portfolio website** developed using only **HTML5 and CSS3**, with a strong focus on clean structure, accessibility, responsiveness, and modern design. It serves as a digital representation of my journey as a:
+This project is a custom-built **portfolio website** developed using only **HTML5 and CSS**, with a strong focus on clean structure, accessibility, responsiveness, and modern design. It serves as a digital representation of my journey as a:
 
 - 💡 Tech Enthusiast  
 - ✍️ SEO Content Writer  
@@ -71,7 +71,7 @@ A strategy document aimed at increasing fashion brand visibility and sales by 40
 
 ### 🔹 Automated Lighting Control with Arduino & Sensors
 An IoT-based lighting control system using PIR and LDR sensors to conserve energy.  
-**Tech Stack:** Arduino Uno, C++, Wokwi Simulator, Proteus  
+**Tech Stack:** Arduino Uno, C/C++, Wokwi Simulator, Proteus  
 - 📄 [Download Project PDF](automated-lighting-control-with-arduino-&-sensors.pdf)  
 - 🧪 [View Wokwi Simulation](https://wokwi.com/projects/417247283921692673)
 
