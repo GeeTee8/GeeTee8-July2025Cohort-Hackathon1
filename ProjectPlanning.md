@@ -31,12 +31,14 @@ This project focuses solely on frontend design using HTML5 and CSS. No external 
 | Page Structure      | Design HTML layout using semantic tags                                   | ✅ Completed | 1 Aug 2025 |
 | Content Insertion   | Add about, programming language, projects, interest, contact section     | ✅ Completed | 1 Aug 2025  |
 | Footer layout and insertion  | Added Footer     | ✅ Completed | 1 Aug 2025  |
-| Styling             | Apply custom CSS                                                         | ✅ Completed | 1 Aug 2025  |
-| Deployment          | Host on GitHub & Netlify                                                 | ✅ Completed | 1 Aug 2025  |
+| Code Review   | Reviewed the plain HTML5 document before styling   | ✅ Completed | 1 Aug 2025  |
+| Styling             | Apply custom CSS to entire document                                                | ✅ Completed | 1 Aug 2025  |
+| General Review  | Made a general review of the code with little adjustment     | ✅ Completed | 1 Aug 2025  |
+| Deployment          | Host on GitHub Page                                                 | ✅ Completed | 2 Aug 2025  |
 
 ## Deployment Info  
-- GitHub Repo: [insert your GitHub link here]  
-- Netlify URL: [insert your Netlify link here]
+- GitHub Repo: [github.com/GeeTee8/GeeTee8-July2025Cohort-Hackathon1](https://github.com/GeeTee8/GeeTee8-July2025Cohort-Hackathon1)
+- GitHub Page URL: [https://geetee8.github.io/GeeTee8-July2025Cohort-Hackathon1/](https://geetee8.github.io/GeeTee8-July2025Cohort-Hackathon1/)
 
 ## Version Control  
 - Branch used: `main`  
