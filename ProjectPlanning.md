@@ -1,0 +1,43 @@
+# Project Planning Document
+
+## Project Title  
+**HTML5  & CSS Portfolio Website**
+
+## Project Description  
+A personal portfolio website built using only semantic HTML5 tags and CSS. It showcases the my profile, skills, and past projects, and includes a contact form for communication. The project emphasizes clean structure, accessibility, and responsive design.
+
+## Objectives  
+- Present a professional and responsive personal website  
+- Demonstrate understanding of HTML5 semantics and CSS styling 
+- Showcase completed projects and programming languages  
+- Enable visitors to contact the me  
+- Deploy to GitHub Pages
+
+## Scope  
+This project focuses solely on frontend design using HTML5 and CSS. No external CSS frameworks or JavaScript functionality are included. Styling and responsiveness are handled with custom CSS.
+
+## Tools & Technologies  
+- HTML5  
+- Custom CSS  
+- Git & GitHub  
+- GitHub Page (Deployment)  
+- VS Code (Editor)
+
+## Milestones & Timeline
+
+| Phase               | Description                                                              | Status     | Date       |
+|---------------------|--------------------------------------------------------------------------|------------|------------|
+| Planning            | Project scope and folder setup                                           | ✅ Completed | 31 Jul 2025 |
+| Page Structure      | Design HTML layout using semantic tags                                   | ✅ Completed | 1 Aug 2025 |
+| Content Insertion   | Add about, programming language, projects, interest, contact section     | ✅ Completed | 1 Aug 2025  |
+| Footer layout and insertion  | Added Footer     | ✅ Completed | 1 Aug 2025  |
+| Styling             | Apply custom CSS                                                         | ✅ Completed | 1 Aug 2025  |
+| Deployment          | Host on GitHub & Netlify                                                 | ✅ Completed | 1 Aug 2025  |
+
+## Deployment Info  
+- GitHub Repo: [insert your GitHub link here]  
+- Netlify URL: [insert your Netlify link here]
+
+## Version Control  
+- Branch used: `main`  
+- Commit structure: Meaningful and consistent messages with each section added
